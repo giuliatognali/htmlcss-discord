@@ -238,20 +238,24 @@ footer .container{
 }
 
 .footer-top .main-column {
-    background-color: #818181;
     flex-basis: 30%;
 }
 
 .lingua{
-    margin: 10px;
-    
+    margin: 10px 0;
+    color: white;
 }
 .lingua img{
     width: 25px;
+    vertical-align: middle;
 }
 .main-column p{
     display: inline-block;
+    vertical-align: middle;
     font-size: 12px;
+}
+.lingua i{
+    font-size: 0.7em;
 }
 
 .icon-social i{
