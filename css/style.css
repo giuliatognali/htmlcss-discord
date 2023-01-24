@@ -63,7 +63,7 @@ Typo
 ---------------
  */
 
- h1{
+h1{
     padding: 50px 0;
     font-size: 2em;
  }
@@ -131,34 +131,28 @@ header .header-top ul li{
 margin: 0 30px;
 }
 
-.link{
+header .header-top .nav .link{
     width: 60%;
     text-align: center;
 }
-.login{
+header .header-top .nav .login{
     text-align: right;
 }
 
-.header-bottom{
+header .header-bottom{
     display: flex;
     justify-content: center;
     padding: 50px 0px;
 }
-.tag-line{
+.header-bottom .tag-line{
     text-align: center;
     width: 45%;   
 }
 
 .tag-line > p{
     padding-bottom: 20px;
- 
-
 }
-/* .btn-scarica::before {
-    display: inline-block;
-    content: '\2193';
-    width: 20px;
-} */
+
 .tag-line .btn{
     margin: 0 5px;
 }
@@ -267,13 +261,11 @@ footer .container{
     display: flex;    
     justify-content: space-between;
     flex-basis: 70%;
-/*     background-color: #20b2aa;
- */    color: white;
+     color: white;
 }
 .menu-column .col{
     flex-basis:25%;
-/*     border: 1px dashed rgb(255, 255, 255);
- */}
+}
 footer ul{
     list-style-type: none;
     padding: 0 20px;
@@ -284,8 +276,7 @@ footer ul{
 
 .footer-bottom {
     display: flex;
-/*     background-color: #20b2aa;
- */    width: 80%;
+    width: 80%;
     justify-content: space-between;
     padding: 25px 0px;   
     border-top: 1px solid #7289da; 
