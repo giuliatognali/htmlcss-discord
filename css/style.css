@@ -212,7 +212,12 @@ main .container .row > .col-text{
     color: white;
 }
 
+.rect h2{
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 
+}
 /* 
 ------------------
 Footer
