@@ -46,12 +46,25 @@ Common
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+a{
+    color: white;
+    text-decoration:none;
+}
+
+.btn
+{
+    border-radius: 25%;
+/*     padding: 7px 10px;
+   margin: 5px; */ 
+}
 /* 
 ------------------
 Header
 ------------------
 */
 header{
+    border-bottom: 4px solid  #add8e6;
     background-image: url(../img/jumbo.png);
     background-size: cover;
     background-position: center bottom;
@@ -72,15 +85,27 @@ header{
 }
 header .header-top .nav > div{
     padding: 10px;
+    
 }
 
-.logo, .login{
+
+.logo {
     width: 20%;   
 }
+#logo-discord{
+
+}
+
+.nav .login{
+    background-color: white;
+    color: black;
+}
+
 header .header-top ul{
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-content: center;
 }
 .link{
     width: 60%; /* posso utilizzare anche flex-grown:1; */
@@ -100,9 +125,7 @@ header .header-top ul{
     width: 45%;   
 }
 
-header{
-    border-bottom: 4px solid  #add8e6;
-}
+
 /* 
 ------------------
 Main
