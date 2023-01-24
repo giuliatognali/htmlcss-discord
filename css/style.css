@@ -21,7 +21,6 @@ Debug
 }
 .debug main .container .row .col-img,
 .debug main .container .row .col-text,
-.debug main .container .row .col-rect-1,
 .debug footer .container .footer-top .main-column
 .debug footer .container .footer-top .menu-column{
     height: 500px;
@@ -70,6 +69,11 @@ Typo
  }
 p{
     line-height: 1.8;
+}
+.rect-1 h2{
+    padding: 50px;
+/*     background-image: url(../img/stars.svg);
+    background-size: cover; */
 }
 /* 
 ------------------
@@ -195,12 +199,21 @@ main .container .row > .col-text{
 
 }
 .rect-1{   
-    background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .col-img img{
     width: 100%;
 }
+
+.rect-1 .btn-scarica{
+    background-color: #7289da;
+    color: white;
+}
+
 
 /* 
 ------------------
