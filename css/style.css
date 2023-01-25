@@ -51,8 +51,8 @@ a{
     text-decoration:none;
 }
 
-.btn
-{
+.btn{
+    display: inline-block;
     border-radius: 20px;
     padding: 10px 15px;
 }
@@ -64,20 +64,33 @@ Typo
  */
 
 h1{
-    padding: 50px 0;
-    font-size: 2em;
+    font-size: 42px;
  }
+ 
+h2{
+    font-size: 40px;
+}
+h1, h2 {
+    padding: 50px 0;
+}
 
 p{
     line-height: 1.8;
 }
 
-.rect-1 h2{
-    padding: 50px;
+h3{
+    font-size: 25px;
 }
 
+h4{
+    font-size: 30px;
+    color: #7289da;
+}
 .footer-bottom h1{
     color:  #7289da ;
+}
+.btn i{
+    margin: 5px;
 }
 /* 
 ------------------
@@ -86,10 +99,7 @@ Header
 */
 
 header{
-    border-bottom: 4px solid  #add8e6;
-    background-image: url(../img/jumbo.png);
-    background-size: cover;
-    background-position: center bottom;
+/*     border-bottom: 4px solid  #add8e6; */
     color: white;
 }
 
@@ -110,10 +120,16 @@ header{
     width: 120px;
 }
 
-.nav .login{
+nav .login{
     background-color: white;
+/*     color: black; */
+    font-size: 14px;
+}
+nav .login a{
     color: black;
 }
+
+
 header .header-top .logo, 
 header .header-top .login,
 header .header-top .link{
@@ -128,7 +144,8 @@ header .header-top ul{
 }
 
 header .header-top ul li{
-margin: 0 30px;
+    margin: 0 30px;
+    font-size: 14px;
 }
 
 header .header-top .nav .link{
@@ -142,7 +159,10 @@ header .header-top .nav .login{
 header .header-bottom{
     display: flex;
     justify-content: center;
-    padding: 50px 0px;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-position: center bottom;
+    padding: 70px 0px;
 }
 .header-bottom .tag-line{
     text-align: center;
@@ -156,11 +176,12 @@ header .header-bottom{
 .tag-line .btn{
     margin: 0 5px;
 }
-.btn-apri{
+.btn-primary{
     background-color: #23272a;
+    color: white;
 }
 
-.btn-scarica{
+.btn-secondary{
     background-color: white;
     color: black;
 }
@@ -193,13 +214,10 @@ main .container .row > .col-text{
 }
 
 .col-text{
-    padding: 0 20px;
+    padding: 0 40px;
 
 }
 .rect-1{   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
 }
 
@@ -207,17 +225,22 @@ main .container .row > .col-text{
     width: 100%;
 }
 
-.rect-1 .btn-scarica{
+.rect-1 h3{
+    padding: 50px;
+}
+.stars{
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+.rect-1 .btn-secondary{
     background-color: #7289da;
     color: white;
 }
 
-.rect h2{
-    background-image: url(../img/stars.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-
-}
 /* 
 ------------------
 Footer
@@ -240,42 +263,42 @@ footer .container{
     flex-basis: 30%;
 }
 
-.lingua{
+.footer-top .main-column .lingua{
     margin: 10px 0;
     color: white;
 }
-.lingua img{
+.footer-top .main-column .lingua img{
     width: 25px;
     vertical-align: middle;
 }
-.main-column p{
+.footer-top .main-column p{
     display: inline-block;
     vertical-align: middle;
     font-size: 12px;
 }
-.lingua i{
+.footer-top .main-column .lingua i{
     font-size: 0.7em;
 }
 
-.icon-social i{
+.footer-top .main-column .icon-social i{
     color: white;
     padding-right: 10px;
     font-size: 1.5em;
 }
-.menu-column{
+.footer-top .menu-column{
     display: flex;    
     justify-content: space-between;
     flex-basis: 70%;
-     color: white;
+    color: white;
 }
-.menu-column .col{
+.footer-top .menu-column .col{
     flex-basis:25%;
 }
 footer ul{
     list-style-type: none;
     padding: 0 20px;
  }
- footer li{
+footer li{
     padding-bottom: 20px;
  }
 
@@ -291,6 +314,6 @@ footer ul{
     background-color: #7289da;
     color: white;
 }
-footer ul li:first-child, .main-column h2{
+footer ul li:first-child, .main-column h4{
     color: #7289da;
 }
